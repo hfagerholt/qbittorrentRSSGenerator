@@ -19,9 +19,8 @@ notfilter="GERMAN|FRENCH|DUBBED"
 for showep in shows:
 	show=showep[0]
 	epfilter=showep[1]
-	filename=show+"json"
 	with open(show+".json", 'w') as f:
-		show.replace(" ","*")
+		show=show.replace(" ","*")
 		tmp="""{{
     "{0}": {{
        "addPaused": null,
