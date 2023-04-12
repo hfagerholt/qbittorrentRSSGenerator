@@ -20,7 +20,6 @@ for showep in shows:
 	show=showep[0]
 	epfilter=showep[1]
 	with open(show+".json", 'w') as f:
-		show=show.replace(" ","*")
 		tmp="""{{
     "{0}": {{
        "addPaused": null,
@@ -32,14 +31,14 @@ for showep in shows:
         "episodeFilter": "{2}-;",
         "ignoreDays": 1,
         "lastMatch": "",
-        "mustContain": "{0}*{3}",
+        "mustContain": "{0} {3}",
         "mustNotContain": "{4}",
         "previouslyMatchedEpisodes": [
         ],
         "savePath": "{5}",
         "smartFilter": true,
         "torrentContentLayout": null,
-        "useRegex": true
+        "useRegex": null
     }}
 }}
 
