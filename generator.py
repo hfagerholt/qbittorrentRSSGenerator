@@ -29,7 +29,7 @@ for showep in shows:
         "assignedCategory": "",
         "enabled": true,
         "episodeFilter": "{2}-;",
-        "ignoreDays": 1,
+        "ignoreDays": 6,
         "lastMatch": "",
         "mustContain": "{0} {3}",
         "mustNotContain": "{4}",
